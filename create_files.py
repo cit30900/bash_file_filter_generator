@@ -10,8 +10,8 @@ os.makedirs(directory, exist_ok=True)
 
 # Function to generate a random creation date
 def random_date():
-    # Define the date range: 22 months ago and 2 months from now
-    end_date = datetime.now() + timedelta(days=60)  # 2 months from now
+    # Define the date range: 22 months ago and today
+    end_date = datetime.now()  # Today
     start_date = end_date - timedelta(days=660)     # 22 months ago
 
     # Generate a random number of seconds within the date range
